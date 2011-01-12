@@ -1,0 +1,19 @@
+jQuery plugin that implements the HTML5 placeholder attribute in JavaScript. If the browser has support for the new HTML5 placeholder attribute then the plugin will default to that instead of a JavaScript powered version.
+
+Simply create a label element with the for attribute as the id of the target element that you want to have a placeholder on, then run the placeholder function.
+
+Example:
+<html>
+	<head>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('label_for_some_input').placeholder();
+			});
+		</script>
+	</head>
+	<body>
+		<label id="label_for_some_input" for="some_input">Some Input!</label>
+		<input type="text" id="some_input"/>
+	</body>
+</html>
